@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Crater</title>
+		<style type="text/css">
+     		body {
+    			margin: 10px;
+        		white-space: nowrap;
+        		min-width: 350px;
+      		}
+
+      		h1 {
+        		font-size: 15px;
+      		}
+
+      		#container {
+        		align-items: center;
+        		display: flex;
+        		justify-content: space-between;
+      		}
+    	</style>
+    	<script src="popup.js"></script>
+	</head>
+	<body>
+		<h2>Crater</h2>
+		<h2>Cryprtocurrency Tracker</h2>
+		<div id="container">
+			<select id="exchange">
+				<option selected disabled hidden value=''></option>
+				<option value="Koinex">Koinex</option>
+			</select>&nbsp
+			<select id="currency">
+				<option selected disabled hidden value=''></option>
+				<option value="BTC">BTC</option>
+				<option value="ETH">ETH</option>
+				<option value="XRP">XRP</option>
+				<option value="LTC">LTC</option>
+				<option value="BCH">BCH</option>
+			</select>&nbsp
+			<button style="font-size:20px;background: inherit;" onclick="loadPrice()">&#8634;</button>
+		</div>
+		</hr>
+		<div id="container">
+			Buy Price <span id="bprice"></span><br>
+			Sell Price <span id="sprice"></span>
+		</div>
+	</body>
